@@ -1,0 +1,7 @@
+{
+    "name": "foxworn3365/prohash",
+    "description": "ProHash is a system for encrypting and decrypting strings with an auto-generated key. Without that it will be almost impossible to decipher the content",
+    "require": {
+        "php": ">=7.4",
+    }
+}
