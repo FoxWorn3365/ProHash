@@ -49,12 +49,12 @@ use Fox\Hash as Hash;
 $hash = new Hash();
 
 // Now let's go encrypt the string
-$result = $hash->new('my name is Federico'); // STRING: 18444^1333537^1267562^11461^604604^18444^305210^1267562^661014^202788^1267562^656169^305210^392471^305210^1214056^661014^548144^171148^
+$result = $hash->new('my name is Paolo Bonolis');
 
 // The key is in $result["key"] and the encrypted string is in $result["string"];
 
 // Now let's go decrypt the string
-$myString = $hash->decrypt($result["string"], $result["key"]); // OUTPUT: my name is Federico
+$myString = $hash->decrypt($result["string"], $result["key"]); // OUTPUT: my name is Paolo Bonolis
 
 // Now we can also encrypt a string with an existent key
 $temp = $hash->encrypt('my name is Federico', $result["key"]); // THE OUTPUT WILL BE EQUAL TO $result["string"];
